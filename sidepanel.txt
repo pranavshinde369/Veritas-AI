@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veritas AI</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; padding: 15px; background: #121212; color: white; }
+    h2 { color: #00e676; font-size: 1.2rem; margin-bottom: 10px; }
+    .status-card { background: #1e1e1e; border-radius: 8px; padding: 10px; margin-bottom: 15px; border-left: 4px solid #00e676; }
+    button { 
+      width: 100%; padding: 12px; margin: 5px 0; border: none; border-radius: 6px; 
+      cursor: pointer; font-weight: bold; transition: 0.3s;
+      background: #333; color: white; text-align: left;
+    }
+    button:hover { background: #444; }
+    .btn-audit { border-left: 4px solid #2196F3; } /* News */
+    .btn-legal { border-left: 4px solid #FFC107; } /* Legal */
+    .btn-fintech { border-left: 4px solid #E91E63; } /* Fintech */
+    .btn-web3 { background: #6200ea; color: white; text-align: center; margin-top: 15px; }
+    .results { margin-top: 20px; font-size: 0.9rem; color: #bbb; }
+  </style>
+</head>
+<body>
+  <h2>Veritas AI</h2>
+  <div class="status-card">
+    <small>System Status:</small>
+    <div><strong>Ready to Protect</strong></div>
+  </div>
+
+  <button class="btn-audit" id="newsBtn">🔍 News Audit</button>
+  <button class="btn-legal" id="legalBtn">📜 Legal Decoder</button>
+  <button class="btn-fintech" id="siteBtn">🌐 Site Health</button>
+  <button class="btn-fintech" id="fintechBtn">💰 Finfluencer Audit</button>
+  <button class="btn-fintech" id="subBtn">💳 Sub Tracker</button>
+  
+  <button class="btn-web3" id="web3Btn">🔗 Save to Blockchain</button>
+
+  <div id="results" class="results">
+    Waiting for scan...
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
